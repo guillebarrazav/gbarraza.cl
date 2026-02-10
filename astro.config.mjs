@@ -9,5 +9,5 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
   site: 'https://guillebarrazav.github.io',
-  base: '/gbarraza.cl',
+  base: '/',
 });
