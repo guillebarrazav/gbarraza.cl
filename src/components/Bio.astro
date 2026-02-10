@@ -1,0 +1,105 @@
+---
+---
+
+<div class="bio-container">
+    <div class="bio-content">
+        <div class="bio-image-wrapper">
+            <img
+                src={import.meta.env.BASE_URL + "/profile.jpg"}
+                alt="Guillermo Barraza"
+                class="bio-image"
+            />
+        </div>
+        <div class="bio-text">
+            <h1 class="bio-title">Hi, I'm Guillermo.</h1>
+            <p class="bio-description">
+                I help keep <a
+                    href="https://geforcenow.digevo.com/"
+                    class="bio-link">NVIDIA GeForce NOW</a
+                > fast, stable, and running smoothly. Rugby shaped how I think: strategy,
+                resilience, and teamwork. Powered by a steady stream of mate, coffee,
+                and an ever-growing library of unread books. Music is my focus method.
+            </p>
+        </div>
+    </div>
+</div>
+
+<style>
+    .bio-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 6rem;
+    }
+
+    .bio-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+        max-width: 56rem; /* max-w-4xl */
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+
+    .bio-image-wrapper {
+        flex-shrink: 0;
+    }
+
+    .bio-image {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-cover: cover;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .bio-text {
+        flex-grow: 1;
+        font-family: "Lato", sans-serif;
+    }
+
+    .bio-title {
+        font-size: 2.5rem;
+        font-weight: 900;
+        color: #1a1a1a;
+        line-height: 1.1;
+        margin-bottom: 0.75rem;
+        letter-spacing: -0.02em;
+    }
+
+    .bio-description {
+        font-size: 1.25rem;
+        line-height: 1.5;
+        color: #4b5563; /* text-gray-600 */
+        max-width: 36rem;
+    }
+
+    .bio-link {
+        color: #76b900;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .bio-link:hover {
+        text-decoration: underline;
+    }
+
+    /* Mobile Layout */
+    @media (max-width: 768px) {
+        .bio-content {
+            flex-direction: column;
+            text-align: center;
+            gap: 1.5rem;
+        }
+
+        .bio-title {
+            font-size: 2rem;
+        }
+
+        .bio-description {
+            font-size: 1.125rem;
+            margin: 0 auto;
+        }
+    }
+</style>

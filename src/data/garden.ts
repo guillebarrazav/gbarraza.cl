@@ -5,37 +5,13 @@ export const recentMusic = [
         image: "/images/into-the-wild.png",
         link: "#",
     },
-    {
-        title: "The Dark Side of the Moon",
-        subtitle: "Pink Floyd",
-        image: "https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png", // Placeholder
-        link: "#",
-    },
-    {
-        title: "Currents",
-        subtitle: "Tame Impala",
-        image: "https://upload.wikimedia.org/wikipedia/en/9/9b/Tame_Impala_-_Currents.png", // Placeholder
-        link: "#",
-    }
 ];
 
 export const recentBooks = [
     {
-        title: "Dune",
-        subtitle: "Frank Herbert",
-        image: "https://upload.wikimedia.org/wikipedia/en/d/de/Dune-Frank_Herbert_%281965%29_First_edition.jpg", // Placeholder
-        link: "#",
-    },
-    {
-        title: "Atomic Habits",
-        subtitle: "James Clear",
-        image: "https://upload.wikimedia.org/wikipedia/en/0/0d/Atomic_Habits.jpg", // Placeholder
-        link: "#",
-    },
-    {
-        title: "Project Hail Mary",
-        subtitle: "Andy Weir",
-        image: "https://upload.wikimedia.org/wikipedia/en/3/3f/Project_Hail_Mary.jpg", // Placeholder
+        title: "Fire & Blood",
+        subtitle: "George R.R. Martin",
+        image: "/images/book-fire-and-blood.jpg",
         link: "#",
     }
 ];
