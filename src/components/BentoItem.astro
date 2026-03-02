@@ -7,13 +7,13 @@ interface Props {
 const { class: className = "", style } = Astro.props;
 ---
 
-<article
-  class:list={[
-    "rounded-lg bg-[#fcfcfc] border-0",
-    "overflow-hidden relative group",
-    className,
-  ]}
-  style={style}
->
-  <slot />
-</article>
+<div class:list={["px-1 pb-2", className]} style={style}>
+  <article
+    class:list={[
+      "rounded-lg bg-[#fcfcfc] border-0",
+      "h-full w-full overflow-hidden relative group transition-colors",
+    ]}
+  >
+    <slot />
+  </article>
+</div>
