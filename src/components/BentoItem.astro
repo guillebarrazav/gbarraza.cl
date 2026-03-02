@@ -1,18 +1,19 @@
 ---
 interface Props {
   class?: string;
+  style?: string;
 }
 
-const { class: className = "" } = Astro.props;
+const { class: className = "", style } = Astro.props;
 ---
 
 <article
   class:list={[
-    "rounded-lg bg-[#fafafa] border-0",
-    "transition-all duration-[250ms] ease-in-out hover:bg-[#f0f0f0]",
+    "rounded-lg bg-[#fcfcfc] border-0",
     "overflow-hidden relative group",
     className,
   ]}
+  style={style}
 >
   <slot />
 </article>
